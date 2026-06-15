@@ -60,6 +60,27 @@ base_de_conocimiento = [
         "conclusion": "Limpiar ventiladores y reaplicar pasta térmica",
         "confianza": 0.90
     },
+    {
+        "id": "R08",
+        "descripcion": "Batería CMOS agotada",
+        "condiciones": ["enciende", "pierde_hora_fecha", "mensaje_cmos"],
+        "conclusion": "Reemplazar batería CMOS de la placa madre",
+        "confianza": 0.83
+    },
+    {
+        "id": "R09",
+        "descripcion": "Problema de red",
+        "condiciones": ["enciende", "sin_internet", "wifi_desconectado"],
+        "conclusion": "Revisar adaptador de red y configuración del router",
+        "confianza": 0.78
+    },
+    {
+        "id": "R10",
+        "descripcion": "CPU sobrecargada",
+        "condiciones": ["enciende", "equipo_lento", "cpu_al_100"],
+        "conclusion": "Revisar procesos activos y programas de inicio",
+        "confianza": 0.84
+    }
 ]
 
 
@@ -165,7 +186,13 @@ PREGUNTAS = {
     "ventilador_siempre_activo":"¿El ventilador está siempre a máxima velocidad?",
     "pantalla_azul_frecuente":  "¿Aparece pantalla azul (BSOD) con frecuencia?",
     "se_apaga_solo":            "¿El equipo se apaga solo sin advertencia?",
-    "calor_excesivo":           "¿El chasis está muy caliente al tacto?"
+    "calor_excesivo":           "¿El chasis está muy caliente al tacto?",
+    "pierde_hora_fecha":        "¿La fecha y hora se reinician frecuentemente?",
+    "mensaje_cmos":             "¿Aparece un mensaje relacionado con CMOS al arrancar?",
+    "sin_internet":             "¿No hay acceso a Internet?",
+    "wifi_desconectado":        "¿El WiFi aparece desconectado o no disponible?",
+    "equipo_lento":             "¿El sistema responde muy lentamente?",
+    "cpu_al_100":               "¿La CPU aparece al 100% de uso?"
 }
 
 def consultar():
