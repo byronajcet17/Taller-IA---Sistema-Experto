@@ -232,11 +232,3 @@ ENTONCES aprender C#
 
 ---
 
-## 10. ¿Qué problema de diseño podría surgir si dos reglas tienen exactamente las mismas condiciones pero conclusiones diferentes? ¿Cómo lo resolverías?
-
-El problema es que se produciría un conflicto porque el sistema podría llegar a dos conclusiones distintas a partir de la misma evidencia.
-
-Yo lo resolvería utilizando factores de confianza para priorizar una regla sobre otra, o revisando la base de conocimiento para eliminar inconsistencias y asegurar que cada conjunto de condiciones conduzca a una conclusión coherente.
-
-
-
